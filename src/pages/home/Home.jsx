@@ -34,7 +34,7 @@ const Home = () => {
           {productItem}
         </div>
         <Button onClick={() => setLimit(!limit)} className='w-[200px] mx-auto font-semibold text-lg border-transparent text-white bg-orange-500 hover:bg-green-500 active:bg-blue-500'>
-          View All Products
+          {!limit ?'View All Products': '8 Products'}
         </Button>
       </div>
       <div className="container my-5 flex items-center justify-center gap-8">

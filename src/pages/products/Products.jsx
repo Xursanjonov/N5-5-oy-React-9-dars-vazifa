@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Products = ({ id, image, title, price }) => {
     return (
-        <div className='products group w-[300px] h-[430px] flex flex-col justify-between border-2 p-4 rounded-xl hover:shadow-lg hover:shadow-gray-500'>
+        <div className='products group w-[300px] h-[450px] flex flex-col justify-between border-2 p-4 rounded-xl hover:shadow-lg hover:shadow-gray-500'>
             <div className="flex">
                 <Link to={`/products/${id}`} className='w-[250px] h-[300px] flex items-center justify-center p-1 mx-auto'>
                     <img className='w-[250px] h-[300px] p-3 object-contain mx-auto' src={image} />
