@@ -8,6 +8,7 @@ import Button from '../../components/form-components/Button';
 import SectionIcon from '../../assets/icons/SectionIcon';
 import Products from '../products/Products';
 import request from '../../config/request';
+import Hero from './components/Hero';
 
 const Home = () => {
   const [limit, setLimit] = React.useState(false);
@@ -25,6 +26,7 @@ const Home = () => {
 
   return (
     <section className='home mx-auto'>
+      <Hero />
       <div className="my-10 flex flex-col items-start justify-center gap-5">
         <div className="flex items-center justify-center gap-3 text-orange-500">
           <SectionIcon />
@@ -34,7 +36,7 @@ const Home = () => {
           {productItem}
         </div>
         <Button onClick={() => setLimit(!limit)} className='w-[200px] mx-auto font-semibold text-lg border-transparent text-white bg-orange-500 hover:bg-green-500 active:bg-blue-500'>
-          {!limit ?'View All Products': '8 Products'}
+          {!limit ? 'View All Products' : '8 Products'}
         </Button>
       </div>
       <div className="container my-5 flex items-center justify-center gap-8">

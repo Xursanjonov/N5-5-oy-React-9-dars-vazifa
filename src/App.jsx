@@ -5,7 +5,7 @@ import Home from './pages/home/Home'
 import Auth from './pages/auth/Auth'
 import Admin from './pages/admin/Admin'
 import Login from './pages/login/Login'
-import Products from './pages/products/Products'
+import { ShopAll } from './pages/products/Products'
 import ProductsDetails from './pages/products-details/ProductsDetails'
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='login' element={<Login />} />
-          <Route path='products' element={<Products />} />
+          <Route path='shop' element={<ShopAll />} />
           <Route path='products/:id' element={<ProductsDetails />} />
           <Route path='/' element={<Auth />} >
             <Route path='admin' element={<Admin />} />
